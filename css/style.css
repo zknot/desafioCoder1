@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=PT+Sans:wght@400;700&display=swap');
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'PT Sans', sans-serif;*/
+
+/* 45062E - 7F055F - E5A4CB - EBD2BE - FFE8D4 - */
+
+/* MOBILE LAST */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header{
+    background-color: #7F055F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoPrincipal{
+    width: 200px;
+    padding: 5px;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.header li, .footer li{
+    margin: 10px;
+}
+
+.header a, .footer a{
+    color: #FFE8D4;
+    text-decoration: none;
+    font-family: 'nunito';
+}
+
+.header a:hover, .footer a:hover{
+    color: #E5A4CB;
+    font-weight: bold;
+}
+
+/* General */
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito';
+    background-color: #E5A4CB;
+    width: 100%;
+    color: white;  
+}
+
+h1:hover{
+    color: #7F055F;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+h2 {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito';
+    font-size: medium;
+    text-align: justify;
+    color: #7F055F;
+}
+
+.main-index, .main-nosotros, .main-contacto, .main-modelos, .ubicacionMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../assets/img/mimilusfondobody.png);
+    background-repeat: 0;
+    background-position: center;
+    
+}
+
+/* Fin General */
+
+/* Index */
+
+.vestidosIndex p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nunito';
+    margin: 10px;
+    background-color: #E5A4CB;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel{
+    display: flex;
+    padding: 10px;
+}
+
+.grid-index{
+    display: grid;
+    
+}
+
+/* Nosotros */
+
+main .main-nosotros {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito';
+}
+
+.main-nosotros img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 15px;
+}
+
+/* Galeria Modelos */
+
+.grid-container {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-container img{
+    width: 250px;
+    padding: 10px;
+}
+
+/* Ubicacion */
+
+.ubicacionMapa iframe{
+    display: flex;
+    padding: 10px;
+}
+
+/* Contacto */
+
+.main-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.main-contacto label{
+    padding: 5px;
+    font-family: 'nunito';
+}
+
+.main-contacto input{
+    padding: 10px;
+    font-family: 'nunito'; 
+}
+
+/* Footer */
+
+.footer {
+    background-color: #7F055F;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.footer img{
+    display: flex;
+    margin: 20px;
+    width: 40px;
+    justify-content: center;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    font-family: 'nunito';
+    color: #FFE8D4;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+/* Media Query */
+
+@media (max-width: 850px){
+    .header{
+        flex-direction: row;
+    }
+    .header img{
+        width: 200px;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 10px;
+
+    }
+
+    .main-nosotros img {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 680px){
+    .header{
+        flex-direction: column;
+    }
+    .header img {
+        width: 150px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+    
+    .grid-container{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 10px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+     .main-nosotros img {
+        width: 250px;
+    }
+
+    .ubicacionMapa iframe{
+        width: 400px;
+    }
+    
+    .footer ul{
+        width: 182px;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .header{
+        flex-direction: column;
+    }
+    .header img {
+        width: 150px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+    
+    .grid-container{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 10px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .ubicacionMapa iframe{
+        width: 400px;
+    }
+    
+    .footer ul{
+        width: 182px;
+    }
+}
