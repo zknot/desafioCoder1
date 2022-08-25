@@ -61,12 +61,6 @@ h1 {
     color: white;  
 }
 
-h1:hover{
-    color: #7F055F;
-    text-decoration: underline;
-    transition: .3s;
-}
-
 h2 {
     display: flex;
     margin: 10px;
@@ -121,13 +115,7 @@ main .main-nosotros {
     font-family: 'Nunito';
 }
 
-.main-nosotros img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    padding: 15px;
-}
+
 
 /* Galeria Modelos */
 
